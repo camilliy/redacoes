@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Redações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1 class="logo">
+            <span>Portfólio</span> de <span>Redações</span>
+        </h1>
+        <ul>
+            <li><a href="#" onclick="mostrarLista()">Início</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="lista-redacoes" class="hero">
+    <h2>Bem-vindo ao meu portfólio</h2>
+</section>
+
+<main class="grid" id="grid">
+    <!-- Cards preenchidos via script.js -->
+</main>
+
+<!-- ÁREA DE TEXTO COMPLETO DA REDAÇÃO -->
+<section id="leitor" class="leitor oculto">
+    <button class="voltar" onclick="mostrarLista()">← Voltar</button>
+    <h2 id="titulo-redacao"></h2>
+    <article id="texto-redacao"></article>
+</section>
+
+<footer>
+    <p>© 2025 • Meu Portfólio de Redações</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

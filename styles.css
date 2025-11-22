@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- FUNDO COM GRADIENTE SUAVE --- */
+body {
+    background: linear-gradient(180deg, #DFF7EE 0%, #C9F2E4 45%, #EFFEFA 100%);
+    font-family: 'Inter', sans-serif;
+    color: #2a2a2a;
+}
+
+/* --- HEADER COM LOGO ELEGANTE --- */
+header {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #cceee0;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #204c40;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #3d8d7a;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b4d46;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #3f8f7c;
+}
+
+/* --- TÍTULO PRINCIPAL --- */
+.hero {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #244f46;
+}
+
+/* --- GRID DE CARDS --- */
+.grid {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+.card {
+    padding: 25px;
+    background: #FCFFFD;     /* Off-white delicado */
+    border: 1px solid #cfece3;
+    border-radius: 22px;     /* CANTOS ARREDONDADOS */
+    transition: 0.25s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 60, 45, 0.06);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 26px rgba(0, 60, 45, 0.14);
+    background: #F9FFFC;
+}
+
+/* --- TÍTULO CENTRALIZADO --- */
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    text-align: center;
+    color: #2b4d46;
+    margin-bottom: 10px;
+}
+
+.card p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4f6e66;
+}
+
+/* --- LEITOR DE REDAÇÃO --- */
+.leitor {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 35px 45px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #c7e9dd;
+    box-shadow: 0 6px 25px rgba(0, 60, 45, 0.10);
+}
+
+.leitor h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #204c40;
+}
+
+.leitor article {
+    line-height: 1.8;
+    font-size: 17px;
+    white-space: pre-wrap;
+    color: #355b53;
+}
+
+/* --- BOTÃO VOLTAR --- */
+.voltar {
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #2b4d46;
+}
+
+.voltar:hover {
+    color: #3f8f7c;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #cceee0;
+    color: #44685f;
+}
+
+.oculto {
+    display: none;
+}
